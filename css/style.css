@@ -1,0 +1,192 @@
+.hero-container{
+    background-color: white;
+    text-decoration-color: black;
+}
+.body{
+    line-height: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/*SECTION-2(Courses)*/
+
+.courses h2{
+    text-align: center;
+    color: darkslategray;
+}
+.courses img{
+    opacity: 0.9;
+    overflow: hidden;
+}
+#webdev,#appdev,#marketing{
+    margin-bottom: 3rem;
+    border-style: solid;
+    border-color: black;
+    background-color: lightgray;
+    position: relative;
+    background-image: radial-gradient(gray,lightgray,white);
+    
+}
+.courses p{
+    padding-top: 10px;
+    font-size: 21px;
+    color: #6b6b47;
+}
+#btnCourses{
+    text-decoration: none;
+    text-align: center;
+    padding: 1.4%;
+    color: #8a8a5c;
+    background-color: white;
+    display: inline-block;
+    border-radius: 1.7rem;
+    border-color: #8a8a5c;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 1.7%;
+}
+#btnCourses:hover{
+    color: white;
+    background-color: #8a8a5c;
+    border-color: white;
+}
+
+.slides img{
+    opacity: 0.8;
+    overflow: hidden;
+    max-height: 100vh;
+}
+/* Section-3(Alumni) */
+.alumni{
+    margin: 2px;
+    overflow: hidden;
+    padding: 1.5%;
+    background-color: rgb(255, 236, 230);
+    border-style: solid;
+    border-radius: 0.8rem;
+    border-color: orange;
+}
+#alumni-card{
+    border-style: inset;
+    border-radius: 0.5rem;
+    border-color: orangered;
+}
+.alumni h5{
+    text-align: center;
+    color: brown;
+}
+.alumni h2{
+    text-align: center;
+    color: orangered;
+    padding-bottom: 5px;
+}
+
+/*FAQs rgb(45, 181, 227)*/
+
+.FAQs-p{
+    color: white;
+    text-align: center;
+    background-color:black;
+    text-decoration-thickness: 1.2rem;
+    font-size: 20px;
+    bottom: 0px;
+}
+.FAQs{
+    text-align: center;
+}
+
+/*FOOTER*/
+
+#footer{
+    padding: 3%;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+#bottom{
+    background-color: aquamarine;
+    text-align: center;
+    text-decoration-color: black;
+}
+#btn-bottom{
+    border-style: inline-block;
+    border-radius: 2px;
+    border-color: black;
+    background-color: white;
+    color: black;
+    display: flex;
+    transition: 0.2s;
+}
+#btn-bottom:hover{
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+.media-buttons{
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: 0.3s;
+    transition-property: transform;
+}
+.media-buttons a{
+    position: relative;
+    color: #111;
+    font-size: 45px;
+}
+.media-buttons a:not(:last-child){
+    margin-right: 60px;
+}
+.media-buttons a:hover{
+    transform: scale(1.6);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:1050px) {
+    .courses p{
+        padding-top: 0px;
+        font-size: 22px;
+        line-height: 2.1rem;
+    }
+    .extra{
+        display: none;
+    }
+}
+@media only screen and (max-width:800px) {
+    body{
+        font-size: 19px;
+        line-height: 1.3rem;
+    }
+    .btn-bottom{
+        font-size: small;
+    }
+    .media-buttons{
+        font-size: 10px;
+    }
+    .courses{
+        overflow: hidden;
+        line-height: normal;
+    }
+    .courses p{
+        padding-top: 0px;
+        font-size: smaller;
+        line-height: 1.8rem;
+    }
+    #btnCourses{
+        position: relative;
+    }
+    .extra{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .home,.about,.course{
+        font-size:x-small;
+    }
+    .btn{
+        font-size: x-small;
+    }
+}
